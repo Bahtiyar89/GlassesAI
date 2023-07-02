@@ -12,11 +12,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		60CE8D65971D415998F8859A /* humanoid in Resources */ = {isa = PBXBuildFile; fileRef = 99153DD98A644AEB82B6CD78 /* humanoid */; };
 		6A3DD268DD394B0F83A8511D /* aviators in Resources */ = {isa = PBXBuildFile; fileRef = AA4A6D5285EE47098A4A2B09 /* aviators */; };
 		7699B88040F8A987B510C191 /* libPods-GlassesAI-GlassesAITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-GlassesAI-GlassesAITests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		ACD01E992A50938900820F3A /* DeepAR.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD01E982A50938900820F3A /* DeepAR.xcframework */; };
-		60CE8D65971D415998F8859A /* humanoid in Resources */ = {isa = PBXBuildFile; fileRef = 99153DD98A644AEB82B6CD78 /* humanoid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +46,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-GlassesAI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GlassesAI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GlassesAI/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-GlassesAI-GlassesAITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlassesAI-GlassesAITests.release.xcconfig"; path = "Target Support Files/Pods-GlassesAI-GlassesAITests/Pods-GlassesAI-GlassesAITests.release.xcconfig"; sourceTree = "<group>"; };
-		AA4A6D5285EE47098A4A2B09 /* aviators */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = aviators; path = ../assets/effects/aviators; sourceTree = "<group>"; };
+		99153DD98A644AEB82B6CD78 /* humanoid */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = humanoid; path = ../assets/effects/humanoid; sourceTree = "<group>"; };
+		AA4A6D5285EE47098A4A2B09 /* aviators */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = aviators; path = ../assets/effects/aviators; sourceTree = "<group>"; };
 		ACD01E982A50938900820F3A /* DeepAR.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DeepAR.xcframework; path = "../node_modules/react-native-deepar/ios/Frameworks/DeepAR.xcframework"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		99153DD98A644AEB82B6CD78 /* humanoid */ = {isa = PBXFileReference; name = "humanoid"; path = "../assets/effects/humanoid"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +153,6 @@
 				99153DD98A644AEB82B6CD78 /* humanoid */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -506,7 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = N9G65KGXBM;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GlassesAI/Info.plist;
@@ -514,7 +513,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -534,14 +533,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = N9G65KGXBM;
 				INFOPLIST_FILE = GlassesAI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
