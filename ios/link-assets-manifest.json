@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/effects/aviators",
+      "sha1": "d70a97558cc4d9a4df47df096772417e5aad2c18"
+    },
+    {
+      "path": "assets/effects/humanoid",
+      "sha1": "497dcc3b5225f82e66cb7b6aed5c66fcb4421349"
+    }
+  ]
+}
