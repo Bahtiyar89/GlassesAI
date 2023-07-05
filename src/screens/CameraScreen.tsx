@@ -8,14 +8,16 @@ import DeepARView, {
   ErrorTypes,
   CameraPositions,
 } from 'react-native-deepar';
-import RNFetchBlob from 'rn-fetch-blob';
+import {useToast} from 'react-native-toast-notifications';
+//import RNFetchBlob from 'rn-fetch-blob';
 
 import {Button} from '../components';
 import {Config, Images, Effects, Computed, Enums} from '../constants';
-import Utils from '../utils';
+//import Utils from '../utils';
 
 const CameraScreen = ({navigation}: {navigation: any}) => {
   const deepARRef = useRef<IDeepARHandle>(null);
+  const toast = useToast();
 
   const [permsGranted, setPermsGranted] = useState(false);
   const [switchCameraInProgress, setSwitchCameraInProgress] = useState(false);
@@ -96,9 +98,14 @@ const CameraScreen = ({navigation}: {navigation: any}) => {
   };
 
   const takeScreenshot = () => {
-    if (deepARRef) {
+    toast.show('Успешно', {
+      type: 'success',
+      duration: 3000,
+      animationType: 'zoom-in',
+    });
+   {/* if (deepARRef) {
       deepARRef?.current?.takeScreenshot();
-    }
+    }*/}
   };
 
   const renderPhotoViewButtons = () => {
@@ -111,7 +118,7 @@ const CameraScreen = ({navigation}: {navigation: any}) => {
     return (
       <>
         <View style={styles.upLeftButtons}>
-          <Button
+        {/*  <Button
             style={styles.upLeftButton}
             text="Show Stats"
             onPress={() => {
@@ -202,10 +209,10 @@ const CameraScreen = ({navigation}: {navigation: any}) => {
 
               setIsFacePaintingStarted(isStarted);
             }}
-          />
+          />*/}
           <Button
             style={styles.upLeftButton}
-            text="Go Back"
+            text="Назад"
             onPress={() => {
               navigation.goBack();
             }}
